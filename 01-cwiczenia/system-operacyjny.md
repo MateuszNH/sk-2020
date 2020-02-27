@@ -40,17 +40,19 @@
 | cfg interfejsów           | centos 7 | /etc/sysconfig/network-scripts         |
 | program (parametry sieci) | niewiem               |                           |
 | ....                      | .....                 |                           |
-
-
+nazwa                       Alpine
+parametry ip                $ ip a                   show all ip configuration
+routing table ip route show // brama
+dns cfg cat /etc/resolve   dns
 ### Konfiguracja połączenia sieciowego
 
 | Parametr | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
-| Adres IP      | XX.XX.XX.XX | przydzielony przez DHCP |
-| Maska podsieci      |  |  |
-| Brama      |  |  |
-| DNS 1      |  |  |
-| DNS 2      |  |  |
+| Adres IP      | 10.0.2.15 | przydzielony przez DHCP |
+| Maska podsieci      |10.0.2.15/24  | notarcja cird /255.255.255.0  |
+| Brama      | 10.0.2.2  |
+| DNS 1      | 10.0.0.0  |
+| DNS 2      |  10.0.0.4  |
 
 ### Schemat sieci
 
